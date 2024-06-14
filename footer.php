@@ -1,5 +1,6 @@
 <footer class="footer container">
-  <div class="footer__col">
+  <?php dynamic_sidebar('footer'); ?>
+  <!-- <div class="footer__col">
     <div class="footer__title">Pages</div>
     <ul>
       <li><a href="#">A propos</a></li>
@@ -41,7 +42,7 @@
           <use xlink:href="sprite.14d9fd56.svg#instagram"></use>
         </svg></a>
     </div>
-  </div>
+  </div> -->
 </footer>
 
 <?php wp_footer(); ?>
