@@ -12,10 +12,14 @@
     <?php endif; ?>
   </div>
 
-  <?php wp_list_comments(['style' => 'div', 'walker' => new AgenciaCommentWalker()]) ?>
+  <div class="comments__list">
+    <?php wp_list_comments(['style' => 'div', 'walker' => new AgenciaCommentWalker()]) ?>
+  </div>
+
+  <?php agencia_paginate_comments() ?>
 
   <?php
     if (comments_open()): ?>
-      <?php comment_form(['title_reply' => '', 'class_form' => 'form-2column']); ?>
+      <?php comment_form(); ?>
     <?php endif; ?>
 </div>

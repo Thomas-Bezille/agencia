@@ -21,3 +21,10 @@ function agencia_paginate(): string
 {
   return '<div class="pagination">' . paginate_links(['prev_text' => agencia_icon('arrow'), 'next_text' => agencia_icon('arrow')]) . '</div>';
 }
+
+function agencia_paginate_comments(): void
+{
+  echo '<div class="pagination">';
+  paginate_comments_links(['prev_text' => agencia_icon('arrow'), 'next_text' => agencia_icon('arrow')]);
+  echo '</div>';
+}

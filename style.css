@@ -43,3 +43,12 @@ Requires PHP: 8.1
 .form-2column .form-submit {
   grid-column: 1/-1;
 }
+
+.comment .comment {
+  display: block;
+  margin-left: 75px;
+}
+
+.current_page_parent {
+  color: #fe6748;
+}
