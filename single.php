@@ -23,6 +23,11 @@
         <?php the_content(); ?>
       </div>
 
+      <?php
+      if (comments_open() || absint(get_comments_number()) > 0) {
+        comments_template();
+      }
+      ?>
       <div class="comments">
         <div class="comments__title">10 commentaires</div>
 

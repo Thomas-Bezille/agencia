@@ -24,5 +24,16 @@ Requires PHP: 8.1
 }
 
 .formatted .wp-block-buttons {
-  margin-bottom: 1D5em;
+  margin-bottom: 1.5em;
+}
+
+.comment .edit-link,
+.comment .reply {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.comment .edit-link::before,
+.comment .reply::before {
+  content: " - ";
 }
