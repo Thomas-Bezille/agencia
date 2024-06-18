@@ -13,4 +13,9 @@
   </div>
 
   <?php wp_list_comments(['style' => 'div', 'walker' => new AgenciaCommentWalker()]) ?>
+
+  <?php
+    if (comments_open()): ?>
+      <?php comment_form(['title_reply' => '', 'class_form' => 'form-2column']); ?>
+    <?php endif; ?>
 </div>

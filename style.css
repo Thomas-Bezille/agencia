@@ -37,3 +37,9 @@ Requires PHP: 8.1
 .comment .reply::before {
   content: " - ";
 }
+
+.form-2column .comment-notes,
+.form-2column .comment-form-cookies-consent,
+.form-2column .form-submit {
+  grid-column: 1/-1;
+}
