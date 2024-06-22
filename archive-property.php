@@ -56,7 +56,7 @@
 
 <?php if(get_query_var('paged', 1) > 1): ?>
   <?= agencia_paginate() ?>
-<?php elseif($nextPostLink = get_next_post_link(__('More properties +', 'agencia'))): ?>
+<?php elseif($nextPostLink = get_next_posts_link(__('More properties +', 'agencia'))): ?>
   <div class="pagination">
     <?= $nextPostLink ?>
   </div>
