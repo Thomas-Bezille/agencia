@@ -8,13 +8,7 @@
       <h1 class="bien__title"><?php the_title() ?> - <?= the_field('surface') ?>m²</h1>
       <div class="bien__meta">
         <div class="bien__location"><?= agence_city(get_post()) ?></div>
-        <div class="bien__price">
-          <?php if (get_field('property_category') === 'buy'): ?>
-            <?= sprintf('%s $', get_field('price')) ?>
-          <?php else: ?>
-            <?= sprintf('%s $/mo', get_field('price')) ?>
-          <?php endif; ?>
-        </div>
+        <div class="bien__price"><?php agence_price() ?></div>
       </div>
       <div class="bien__actions">
         <button class="btn btn-filled">Contacter l'agence</button>
